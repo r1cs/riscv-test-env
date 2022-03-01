@@ -1,5 +1,5 @@
 OUTPUT_ARCH( "riscv" )
-ENTRY(_start)
+ENTRY(userstart)
 
 SECTIONS
 {
@@ -14,4 +14,3 @@ SECTIONS
   .bss : { *(.bss) }
   _end = .;
 }
-
